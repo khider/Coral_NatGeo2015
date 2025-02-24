@@ -1,4 +1,7 @@
 # EmileGeay_NatGeo2015
+
+> **_NOTE:_**  This is a snapshot of the original repository as of Feb 24th 2025. 
+
 Code and data to reproduce the analysis of *Emile-Geay et al, 2015: Linkages between tropical Pacific seasonal, interannual, and orbital variability during the Holocene, Nature Geocience.
 (full publications details to follow)*
 
