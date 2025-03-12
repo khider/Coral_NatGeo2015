@@ -1,28 +1,21 @@
-# EmileGeay_NatGeo2015
-Code and data to reproduce the analysis of *Emile-Geay et al, 2015: Linkages between tropical Pacific seasonal, interannual, and orbital variability during the Holocene, Nature Geocience.
-(full publications details to follow)*
+# Links between tropical Pacific seasonal, interannual, and orbital variability dujring the Holocene. 
 
-Matlab code to reproduce the figures of the paper is provided in `code/matlab/`.
-Running holocene_proxy_workflow at the Matlab prompt will generate .mat files from the original data files (.csv or .xls), run the block-bootstrap analysis, and produce figures. Note that the uncertainty quantification of Carré et al [2014] was carried out separately, and is stored in `/data/obs/Quantiles_Carre_orig.mat` and `/data/obs/Quantiles_Carre_ratios.mat'.
+## Motivation
 
-The original data files for Holocene proxy observations are located in `data/obs/`.
-a mat file containing the result of the block-bootstrap sampling of PMIP3 results is located in `data/pmip3/`.  
+This series of Notebook partially reproduce the study by [Emile-Geay et al. (2015)](https://www.nature.com/articles/ngeo2608) entitled "Links between tropical Pacific seasonal, interannual, and orbital variability during the Holocene", published in Nature Geoscience. 
 
-The relevant Python code is in `code/python`.
+The goal is to (1) transform the Matlab data files into the [LiPD format](https://lipd.net) so they are more widely available, and (2) update the Matlab code with Python libraries such as [Pyleoclim](https://pyleoclim-util.readthedocs.io/en/latest/). 
 
-Acknowledgments go to several splendid open-source codes without which this work would have been markedly more painful, if not impossible:
+## Code background
 
-**Matlab**
-- [m_map](http://www.eos.ubc.ca/~rich/map.html)
-- [panel](http://www.mathworks.com/matlabcentral/fileexchange/20003-panel)
-- [latextable](http://www.mathworks.com/matlabcentral/fileexchange/44274-latextable)
-- [wavelet toolbox](http://paos.colorado.edu/research/wavelets/)
-- [Total Least Squares](http://www.mathworks.com/matlabcentral/fileexchange/31109-total-least-squares-method)
+The original code and data was provided by Julien Emile-Geay and is available [on this GitHub repository](https://github.com/CommonClimate/EmileGeay_NatGeo2015). This repository was forked here in February 2025 and is preserved on the `original-study` branch. 
 
-**Python**
-- [seaborn](http://stanford.edu/~mwaskom/software/seaborn/)
-- [anaconda](https://www.continuum.io/downloads)  
+## References
 
-I have tried to honor licenses, but please let me know if I have strayed.
+* Emile-Geay, J., Cobb, K., Carré, M. et al. Links between tropical Pacific seasonal, interannual and orbital variability during the Holocene. Nature Geosci 9, 168–173 (2016). [https://doi.org/10.1038/ngeo2608](https://www.nature.com/articles/ngeo2608)
 
-Finally, the code has not been comprehensively debugged on any machine other than mine, so feedback is appreciated if you encounter problems.
+* Ratnakar, V., & Khider, D. (2024). PyLiPD: a Python package for the manipulation of LiPD datasets (Version v1.3.7) [Computer software]. [https://doi.org/10.5281/zenodo.7951201](https://zenodo.org/records/7951201). 
+
+## Acknowledgements
+
+This work is supported by the National Science Foundation grant RISE 2425885. 
